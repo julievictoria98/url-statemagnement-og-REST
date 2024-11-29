@@ -5,15 +5,18 @@ const headersList = {
   Accept: "application/json",
   //   "User-Agent": "Thunder Client (https://www.thunderclient.com)",
   apikey: key,
-  prefer: "return=representation",
+  Prefer: "return=representation",
   "Content-Type": "application/json",
 };
 
 export async function getSubs() {
-  const response = await fetch(url, {
-    method: "GET",
-    headers: headersList,
-  });
+  const response = await fetch(
+    "https://pxrbkchnbumeogupymca.supabase.co/rest/v1/Subscriptions"
+    // {
+    //   method: "GET",
+    //   headers: headersList,
+    // }
+  );
 
   const data = await response.json();
   return data;
