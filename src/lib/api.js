@@ -5,7 +5,7 @@ const headersList = {
   Accept: "application/json",
   //   "User-Agent": "Thunder Client (https://www.thunderclient.com)",
   apikey: key,
-  Prefer: "return=representation",
+  prefer: "return=representation",
   "Content-Type": "application/json",
 };
 
